@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.bg-primary {
+	background-color: var(--bs-gray-700) !important;
+}
+
+input, button {
+	border-radius: var(--bs-enable-rounded, true) !important;
+}
+
+
+/* Navbar */
+.navbar-brand {
+	display: flex;
+	align-items: center;
+	gap: 0.25em;
+}
+
+/* Banner */
+.banner {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/background.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.banner h1 {
+	font-size: 4rem;
+}
+
+.banner p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.25rem;
+}
+
+/* Registration Page */
+.wrapper {
+	width: 95%;
+	min-height: 70vh;
+	margin: 0 auto;
+	display: grid;
+	align-content: center;
+}
+
+.wrapper .rows {
+	margin: 1em 0;
+}
+
+.wrapper h1 {
+	color: #fff;
+	font-weight: 300;
+}
+
+.wrapper button {
+	margin: 1em 1em 1em 0;
+}
+
+.comment {
+	display: block;
+	color: var(--bs-gray-400);
+	text-decoration: none;
+}
+
+.comment:hover {
+	color: var(--bs-white);
+}
+
+/* Media Queries */
+@media (min-width: 768px ) {
+	.register {
+		clip-path: polygon(0 0, 100% 0, 100% 94%, 68% 86%, 25% 100%, 0 91%);
+	}
+	
+	.wrapper {
+		width: 40%;
+	}
+	
+	.rows {
+	    display: grid;
+	    grid-template-columns: repeat(2, 1fr);
+	    column-gap: 0.5em;
+	}	
+	
+	.col {
+		grid-column: 1/-1;
+	}
+	
+	/* Clearfix */
+	.clearfix {
+		margin: 5em 0;
+	}
+
+}
+
+
