@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.contact.manager</groupId>
-	<artifactId>smartcontactmanager</artifactId>
+	<artifactId>phonebook</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Smart Contact Manager</name>
+	<name>Phonebook</name>
 	<description>Practice Spring Boot Project</description>
 	<properties>
 		<java.version>11</java.version>
