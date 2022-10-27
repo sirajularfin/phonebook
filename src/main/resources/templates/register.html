@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Register an account - Phonebook</title>
 </head>
+
 <body>
 	
-	<section class="register bg-primary">
+	<section class="clip-path bg-primary">
 		<div class="wrapper">
 			<h1>Register an Account</h1>
 			<form action="register" method="POST">
@@ -39,14 +40,13 @@
 						<label>Confirm Password</label>
 					</div>
 				</div>
-				<a th:href="@{/login}" class="comment">Already have an account?
-					Login here
+				<a th:href="@{/login}" class="comment">
+					Already have an account? Login here
 				</a>
 				<button type="submit" class="btn btn-light btn-lg">Register</button>
-				<button type="reset" class="btn btn-danger btn-lg">Reset</button>
+				<button type="reset" class="btn btn-outline-light btn-lg">Reset</button>
 			</form>
 		</div>
-		<div class="clearfix">.</div>
 	</section>
 	
 </body>

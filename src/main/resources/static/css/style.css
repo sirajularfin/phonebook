@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 .bg-primary {
-	background-color: var(--bs-gray-700) !important;
+	background-color: var(--bs-gray-800) !important;
 }
 
 input, button {
 	border-radius: var(--bs-enable-rounded, true) !important;
+}
+
+section {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
@@ -18,20 +29,12 @@ input, button {
 
 /* Banner */
 .banner {
-	width: 100vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	z-index: -1;
-	color: #fff;
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/background.jpg");
+	color: var(--bs-white);
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/background.jpg");
 	background-size: cover;
 	background-position: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	text-align: center;
+	flex-direction: column;
 }
 
 .banner h1 {
@@ -43,32 +46,30 @@ input, button {
 	font-size: 1.25rem;
 }
 
-/* Registration Page */
+/* Login & Registration Page */
 .wrapper {
 	width: 95%;
-	min-height: 70vh;
-	margin: 0 auto;
-	display: grid;
-	align-content: center;
-}
-
-.wrapper .rows {
-	margin: 1em 0;
 }
 
 .wrapper h1 {
-	color: #fff;
+	color: var(--bs-white);
 	font-weight: 300;
+	margin-bottom: 0.5em;
+}
+
+.wrapper .form-floating {
+	margin-bottom: 1em;
 }
 
 .wrapper button {
-	margin: 1em 1em 1em 0;
+	margin-right: 1em;
 }
 
 .comment {
 	display: block;
 	color: var(--bs-gray-400);
 	text-decoration: none;
+	margin-bottom: 1em;
 }
 
 .comment:hover {
@@ -77,8 +78,8 @@ input, button {
 
 /* Media Queries */
 @media (min-width: 768px ) {
-	.register {
-		clip-path: polygon(0 0, 100% 0, 100% 94%, 68% 86%, 25% 100%, 0 91%);
+	.clip-path {
+		clip-path: polygon(0px 0px, 100% 0px, 100% 86%, 30.8% 98.65%, 0px 90%);	
 	}
 	
 	.wrapper {
@@ -93,11 +94,6 @@ input, button {
 	
 	.col {
 		grid-column: 1/-1;
-	}
-	
-	/* Clearfix */
-	.clearfix {
-		margin: 5em 0;
 	}
 
 }

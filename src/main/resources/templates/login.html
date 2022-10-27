@@ -5,10 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Login - Phonebook</title>
 </head>
+
 <body>
 	
-	<section class="login">
-		<h1>This is login page</h1>
+	<section class="clip-path bg-primary">
+		<div class="wrapper">
+			<h1>Login</h1>
+			<form action="login" method="POST">
+				<div class="form-floating rows">
+					<input type="email" class="form-control col" name="email" placeholder="Email" required> 
+					<label>Email address</label>
+				</div>
+			
+				<div class="form-floating rows">
+					<input type="password" class="form-control col" name="password" placeholder="Password" required>
+					<label>Password</label>
+				</div>
+
+				<a th:href="@{/register}" class="comment">
+					Don't have an account? Register an account
+				</a>
+				<button type="submit" class="btn btn-light btn-lg">Login</button>
+			</form>
+		</div>
 	</section>
 	
 </body>
